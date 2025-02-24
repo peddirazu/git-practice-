@@ -13,6 +13,44 @@ style="width:100%;max-width:960px"></div>
 <p>This line is here to show how merging works.</p>
 <p>A new line in our file!</p>
 <div><img src="img_hello_git.jpg" alt="Hello Git" style="width:100%;max-width:640px"></div>
+GIT MERGE	
+git checkout master	Switched to branch 'master'
+git merge emergency-fix	
+git branch -d emergency-fix	Deleted branch emergency-fix (was dfa79db).
+git checkout hello-world-images	Switched to branch 'hello-world-images'
+git add --all	
+git commit -m "added new image"	
+git checkout master	
+git merge hello-world-images	Auto-merging index.html
+git status	
+git add index.html	
+git status	
+git commit -m "merged with hello-world-images after fixing conflicts"	
+git branch -d hello-world-images	Deleted branch hello-world-images (was 1f1584e).
+	
+GIT BRANCH	
+git branch hello-world-images	
+git branch	
+git checkout hello-world-images	
+git status	
+git add --all	one or more file need to add
+git commit -m "Added image to Hello World"	
+git checkout -b emergency-fix	Switched to a new branch 'emergency-fix'
+	
+GIT COMMIT	
+git commit -m "First release of Hello World!"	
+git status --short	
+git commit -a -m "Updated index.html with a new line"	Direcct commit stage 
+git log	
+	
+GIT STAGING ENVIRONMENT	
+git add index.html	
+git status	
+git add --all	
+git status	
+git add -A	all add at a time
+git remote add origin https://github.com/w3schools-test/hello-world.git	git remote add origin URL specifies that you are adding a remote repository, with the specified URL, as an origin to your local Git repo.
+git push --set-upstream origin master	we are going to push our master branch to the origin url, and set it as the default remote branch:
 
 </body>
 </html> 
