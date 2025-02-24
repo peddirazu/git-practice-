@@ -1,0 +1,62 @@
+def new_function(): #this is how we create a function
+    print('We are inside the new_function - line 1')
+    print('We are inside the new_function - line 2')
+    
+new_function()
+print('it was success')
+new_function()
+
+=============================================================
+Decision statements or conditional statements:
+----------------------------------------------
+If-else
+
+Program 1:
+----------
+if False:
+    print('The if condition is successful!')
+elif False:
+    print('This is elif condition!')
+elif False:
+    print('This is second elif condition!')
+else:
+    print('The condition failed!')
+
+------------------------------------------------------
+
+Program 2:
+----------
+x = 25
+
+if x<18:
+    print('Not eligible for voting')
+elif x==18: 
+    print('Ready/eligible to voting')
+else:
+    print('eligible for voting')
+print('Hello there!!!')
+
+--------------------------------------------------------
+
+= > assigning > no return value
+== > comparing > returns boolean value
+
+---------------------------------------------------------
+
+Program 3:
+----------
+name = 'AT&T'
+
+if name=='A T & T':
+    print('the name matches 1')
+elif name=='AT&T ':
+    print('the {} matches 2 '.format(name))
+elif name=='AT&T':
+    print('the {n} matches 3 '.format(n=name))
+else:
+    print(f'name does not match {name}')
+
+============================================================================
+n = 32
+print(n%3==2) #%=modulus = returns remainder
+

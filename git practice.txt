@@ -1,0 +1,268 @@
+pp3760@INBLR2720 MINGW64 ~
+$ git --version
+git version 2.40.1.windows.1
+
+pp3760@INBLR2720 MINGW64 ~
+$ git config --global razu "devops-learning"
+error: key does not contain a section: razu
+
+pp3760@INBLR2720 MINGW64 ~
+$ git config --global user.razu "devops-learning"
+
+pp3760@INBLR2720 MINGW64 ~
+$ git config --global user.email "razu.devops@gmail.com"
+
+pp3760@INBLR2720 MINGW64 ~
+$ mkdir git-devops-learn
+
+pp3760@INBLR2720 MINGW64 ~
+$ cd git-devops-learn
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn
+$ pwd
+/c/Users/pp3760/git-devops-learn
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn
+$ git init
+Initialized empty Git repository in C:/Users/pp3760/git-devops-learn/.git/
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ ls -a
+./  ../  .git/
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ ls
+index.html
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ git add index.html
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ git version -v
+error: unknown switch `v'
+usage: git version [--build-options]
+
+    --build-options       also print build options
+
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ git -v
+git version 2.40.1.windows.1
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md.txt
+        bluestyle.css
+
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ ls
+README.md.txt  bluestyle.css  index.html
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ ls -a
+./  ../  .git/  README.md.txt  bluestyle.css  index.html
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ rm README.md.txt README.md
+rm: cannot remove 'README.md': No such file or directory
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ ls
+bluestyle.css  index.html
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ ls
+README.md.txt  bluestyle.css  index.html
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ mv README.md.txt README.md
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ ls
+README.md  bluestyle.css  index.html
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+        bluestyle.css
+
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ git add index.html
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+        bluestyle.css
+
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ git add --all
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+        new file:   bluestyle.css
+        new file:   index.html
+
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+        new file:   bluestyle.css
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md.txt
+
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ git add -A
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ git commit -m "First release  of Hello World!"
+[master (root-commit) 6c0f815] First release  of Hello World!
+ 4 files changed, 31 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 README.md.txt
+ create mode 100644 bluestyle.css
+ create mode 100644 index.html
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ git status --short
+ M index.html
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ git status ??
+On branch master
+nothing to commit, working tree clean
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ git status A
+On branch master
+nothing to commit, working tree clean
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ git status M
+On branch master
+nothing to commit, working tree clean
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ git status D
+On branch master
+nothing to commit, working tree clean
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ ls
+README.md  README.md.txt  bluestyle.css  index.html
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ git commit -a -m "Updated index.html with new line"
+[master 69bcfeb] Updated index.html with new line
+ 1 file changed, 1 insertion(+)
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$ git log
+commit 69bcfebfe72df7ecf4d081604fd521c63d71143a (HEAD -> master)
+Author: Puvva <razu.devops@gmail.com>
+Date:   Tue Sep 17 17:41:31 2024 +0530
+
+    Updated index.html with new line
+
+commit 6c0f815b02cfce2df4315acb3576c2fea50098c8
+Author: Puvva <razu.devops@gmail.com>
+Date:   Tue Sep 17 17:38:26 2024 +0530
+
+    First release  of Hello World!
+
+pp3760@INBLR2720 MINGW64 ~/git-devops-learn (master)
+$
